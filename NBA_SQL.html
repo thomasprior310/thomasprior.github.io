@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Thomas Prior Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xNOhrt8eetf4+Su2K92FgXYIVMm3jHkoJvKFI5lk98ofjTEWclXHG0I8xtFzEJiJaR/RLRj9z+WTPhmFJx+XsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Additional CSS styles */
+                body {
+                    font-family: 'Segoe UI', sans-serif;
+                    background-color: #002338;
+                    margin: 0;
+                    padding: 0;
+                }
+    
+                #intro {
+                    padding: 4em 1em;
+                    text-align: center;
+                }
+    
+                #intro h1 {
+                    font-size: 3em;
+                    margin-bottom: 0.5em;
+                    color: #5f8ade;
+                }
+    
+                #intro p {
+                    font-size: 1.25em;
+                    color: #5f8ade;
+                    margin-bottom: 1em;
+                }
+    
+                .image.main img {
+                    max-width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 0 20px rgba(81, 0, 255, 0.2);
+                }
+    
+    
+                #header a {
+                    color: #5f8ade;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                }
+    
+    
+            </style>
+	</head>
+	<body class="is-preload">
+
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Thomas Prior<br />
+						</h1>
+						<p>University student experienced in Python, SQL, PowerBI and Html
+							<a href="#" class="image main"><img src="images/ProfilePic.jpeg" alt="" width="600" height="700" /></a>
+						<ul class="actions">
+						
+								
+						
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Thomas Prior</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active"><a href="Projects.html">Projects</a></li>
+							<li class="active"><a href="Media.html">Media</a></li>
+							<li class="active"><a href="CV.html">CV</a></li>
+                            <li class="active"><a href="Blogs.html">Blogs</a></li>
+                            <li class="active"><a href="MoreAboutMe.html">More About Me</a></li>
+						</ul>	
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/thomas-prior-085167220/" class="icon brands alt"><i class="fab fa-linkedin"></i><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/thomasprior310" class="icon brands alt"><i class="fab fa-github"></i><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+								
+									<h2><a >Data Cleaning in SQL to Find the Greatest NBA Games<br />
+									</a></h2>
+									<p> In this project, I leveraged my SQL knowledge to meticulously refine a comprehensive dataset capturing the entirety of NBA history. Initially, the dataset comprised a sprawling 54 columns and 65,643 rows, each game uniquely identified by its game_id, serving as the project's primary key.
+
+                                        The overarching objective was to distill this vast trove of data into a curated selection of elite-level NBA encounters. Crafting a compelling narrative of basketball excellence demanded a judicious application of data cleansing techniques. My approach encompassed multifaceted filtration criteria, delving into the nuanced fabric of each game's essence.
+                                        
+                                        Key considerations included the illustrious teams gracing the hardwood, the intensity of competition reflected in game closeness, the strategic significance of three-pointers, and the pivotal distinction between regular season fixtures and high-stakes playoffs. Each criterion, meticulously fine-tuned, served as a lens through which the dataset was meticulously pruned, honing in on the quintessence of basketball brilliance.
+                                        
+                                        The culmination of these efforts yielded a refined dataset, a veritable chronicle of basketball greatness. Representing the culmination of a rigorous analytical journey, this curated collection now stands as a testament to the timeless allure and enduring legacy of the NBA's most captivating encounters.
+                                    </p>
+								</header>
+                                <li><a href=https://github.com/thomasprior310/thomasprior.github.io/blob/main/SQL%20Code/Greatest_NBA_Games_SQL.sql class = "button large"> View Full Project</a></li>
+
+								</ul>
+							</article>
+
+							<!-- Posts -->
+							<section class="Supervised Learning">
+								<article>
+									<header>
+						            
+										</a></h2>
+									</header>
+		
+									<p> After getting the dataset into PgAdmin4, I started cleaning it up using some basic SQL tricks. First, I made sure there weren't any repeated entries in the dataset. Then, I got rid of any rows that were missing important info, like dates or scores.
+
+                                        Since the dataset goes all the way back to the 1940s, there were quite a few spots where the data was just missing. I decided to get rid of any rows that didn't have a date or had something like 'NA' instead of real data.
+                                        
+                                        Next, I decided to focus on more recent games. In 1979, the NBA introduced the three-pointer, which really changed the game and made it more exciting. So, I decided to only keep games from 1979 onwards because I wanted to make sure all the games included that new three-point shot.
+                                        
+                                        Then, I wanted to make sure the games I was looking at were really thrilling to watch. I figured a game with lots of three-point shots would be pretty exciting, so I only kept games where both teams scored at least five three-pointers. That way, I knew I was looking at some pretty action-packed games.
+                                        
+                                        Lastly, I narrowed it down even further by only keeping playoff games. Playoff games are where the stakes are really high, and there's usually a lot of drama and excitement. I figured if I wanted to find the absolute best games, I should focus on the ones with the most on the line.
+                                    </p>
+                                    <a class="image"><img src="images/SQL_FILTERS_1.png" width="500" height="200" /></a>
+                                        
+                                       <p> 
+                                        To delve deeper into our analysis and truly unearth the cream of the crop, we needed to sift through teams with a profound legacy in NBA history. We identified certain teams with storied franchises, rich with iconic moments and illustrious achievements. These teams include the Celtics, Bulls, Lakers, Warriors, Knicks, Heat, Pistons, Spurs, 76ers, Rockets and Cavaliers. Renowned for their extensive trophy cabinets and enduring presence in the league, these franchises embody the essence of NBA greatness.
+                                        
+                                        By focusing on games involving these powerhouse teams, we aimed to capture the essence of basketball excellence and historical significance. These teams boast a wealth of iconic players and legendary rivalries, ensuring that each game featuring them carries a weighty significance in the annals of NBA lore.
+                                        
+                                        Furthermore, we refined our selection criteria by exclusively retaining games that concluded with a margin of one possession. This stringent criterion ensured that each game was tightly contested, with the outcome hanging in the balance until the final buzzer. By emphasizing close finishes, we sought to curate a collection of games teeming with tension, drama, and exhilarating climaxes, providing viewers with an electrifying and unforgettable experience.
+                                        </p>
+										<a class="image"><img src="images/SQL_FILTERS_2.png" width="900" height="350" /></a>
+                                    
+                                        <p> The histogram illustrates the distribution of game dates for the top 40 greatest NBA games in history. One striking observation is the concentration of games in more recent years, indicating the evolution and growth of the game over time. This trend reflects the advancements in player skills, strategic innovations, and the increasing competitiveness of teams in modern basketball.
+
+                                            Notably, the period between 2008 and 2016 emerges as a 'golden age' of basketball, marked by a plethora of iconic players such as LeBron James, Kobe Bryant, Steph Curry, and Kevin Durant. These legendary athletes not only showcased exceptional talent but also contributed to some of the most memorable moments in NBA history.
+                                            
+                                            Interestingly, the visual also highlights a relative scarcity of games from the late 1990s and early 2000s. This era, characterized by intense defensive battles and lower-scoring affairs, lacked the offensive firepower and excitement seen in more recent NBA matchups. However, in the contemporary NBA landscape, offense has taken center stage, resulting in faster-paced and more entertaining games for fans worldwide.
+                                           </p>
+                                           <a class="image"><img src="images/Histogram.png" width="800" height="600" /></a>
+										<html>
+
+
+
+                                
+
+									
+							</section>
+
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								Barrie, Ontario, Canada</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(705) 279-5420</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">thomasprior310@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/thomas-prior-085167220/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/thomasprior310" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
